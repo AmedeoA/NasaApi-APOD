@@ -1,0 +1,351 @@
+/* Button search -->  "https://uiverse.io/StealthWorm/spotty-horse-48" */
+/* Emoji --> https://www.w3schools.com/charsets/ref_emoji_smileys.asp*/
+
+/* if you want to watch a video search 16/06/2024*/
+
+/* Video Yt https://youtu.be/Y1n2a7YxYGY */
+
+/* Api link https://api.nasa.gov/ */
+
+body {
+  font-family: Monaco, sans-serif;
+  color: #ffffff;
+  background-image: url('moon.jpg'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;             
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;           
+  flex-direction: column;            
+  min-height: 100vh;                 
+}
+
+.container {
+  text-align: center;
+  backdrop-filter: blur(5px);                         
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(214, 214, 214);
+  max-width: 800px;
+  width: 90%;                                
+  margin: 20px auto;                           
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p{
+  background-color: #212121;
+  opacity: 0.8;
+  text-align: left;
+  font-size: 18px
+}
+p1{
+  background-color: #212121;
+  opacity: 0.8;
+  text-align: center;
+  font-size: 18px
+}
+
+
+.date-picker {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+input[type="text"], input[type="date"] {
+  padding: 10px;
+  width: 46%;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+/* Flex layout for APOD content */
+.apod-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;                       
+  flex-wrap: wrap;                   
+}
+
+.apod-text {
+  flex: 1;
+  min-width: 300px;                  
+}
+
+.apod-media {
+  flex: 1;
+  min-width: 300px;
+}
+
+.apod-text h2 {
+  margin-bottom: 10px;
+}
+
+.apod-text p {
+  margin-bottom: 10px;
+}
+
+
+.apod-image {
+  width: 100%;
+  max-width: 600px;                  
+  height: auto;                     
+  object-fit: cover;                 
+  display: block;
+  margin: 10px auto;                
+  border-radius: 10px;              
+}
+
+
+@media (max-width: 640px) {
+  .apod-image {
+      width: 90%;                   
+      height: auto;                  
+  }
+
+  .apod-wrapper {
+      flex-direction: column;        
+  }
+}
+
+
+.apod-video-iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 315px;
+  border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  .apod-video-iframe {
+      width: 90%;
+      height: auto; 
+  }
+}
+
+.error {
+  color: #ffffff;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Stile per il pulsante con il nuovo effetto */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 2.5rem;
+  overflow: hidden;
+  background-size: 300% 300%;
+  cursor: pointer;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+  transition: 0.5s;
+  animation: gradient_301 5s ease infinite;
+  border: double 4px transparent;
+  background-image: linear-gradient(#212121, #212121),
+      linear-gradient(
+          137.48deg,
+          #234064 10%,
+          #59a3b2 45%,
+          #3952ce 67%,
+          #04133c 87%
+      );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  position: relative;
+  margin: 0 auto;
+  
+  /* Eredito il font di body utile */
+  font-family: inherit;
+}
+/* Eredito il font di body utile */
+.btn * {
+  font-family: inherit;
+}
+
+/* Btn search*/
+strong {
+  z-index: 2;
+  font-size: 25px;
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+
+#video {
+  z-index: 2;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#glow {
+  position: absolute;
+  display: flex;
+  width: 12rem;
+}
+
+.circle {
+  width: 100%;
+  height: 30px;
+  filter: blur(2rem);
+  animation: pulse_3011 4s infinite;
+  z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+  background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+  background: rgba(142, 81, 234, 0.704);
+}
+
+.btn:hover #container-stars {
+  z-index: 1;
+  background-color: #212121;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  border: double 4px #fe53bb;
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: none;
+}
+
+.btn:active .circle {
+  background: #fe53bb;
+}
+
+#container-stars {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(1rem);
+  border-radius: 5rem;
+}
+
+#stars {
+  position: relative;
+  background: transparent;
+  width: 200rem;
+  height: 200rem;
+}
+
+#stars::after {
+  content: "";
+  position: absolute;
+  top: -10rem;
+  left: -100rem;
+  width: 100%;
+  height: 100%;
+  animation: animStarRotate 90s linear infinite;
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+#stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+      transform: translateY(0);
+  }
+
+  to {
+      transform: translateY(-135rem);
+  }
+}
+
+@keyframes animStarRotate {
+  from {
+      transform: rotate(360deg);
+  }
+
+  to {
+      transform: rotate(0);
+  }
+}
+
+@keyframes gradient_301 {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse_3011 {
+  0% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+      transform: scale(0.75);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
